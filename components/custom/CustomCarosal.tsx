@@ -134,7 +134,7 @@ export default function CustomEmblaCarousel({
     }, [emblaApi, updateIndexes]);
 
     return (
-        <div className="w-full relative text-white">
+        <div className="w-full text-white">
             <div className="text-white">
                 {CustomButtonWrapper(onPrevClickChoosed, onNextClickChoosed, onSpecificChoosed)}
             </div>

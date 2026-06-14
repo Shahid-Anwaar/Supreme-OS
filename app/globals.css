@@ -87,7 +87,7 @@ body {
      ========================================================= */
 
   .layout-page-container {
-    @apply mx-auto w-full max-w-348 px-4 sm:px-5 md:px-6 lg:px-8 xl:px-0;
+    @apply mx-auto w-full max-w-326 px-4 sm:px-5 md:px-6 lg:px-8 xl:px-0;
   }
 
   .layout-section-space {

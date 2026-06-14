@@ -1,6 +1,22 @@
 import Image from "next/image";
 
-const cards = [
+type PositioningCard = {
+  title: string;
+  description: string;
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  isLarge?: boolean;
+};
+
+type PositioningSectionProps = {
+  heading?: React.ReactNode;
+  description?: string;
+  cards?: PositioningCard[];
+};
+
+const defaultCards: PositioningCard[] = [
   {
     title: "Not a Course",
     description:
@@ -35,57 +51,69 @@ const cards = [
     title: "Step-by-step guidance",
     description:
       "We build your personal brand systems alongside you. You own everything we create. Your team runs it. It keeps working after we are done.",
-    image: "",
-    imageAlt: "",
-    imageWidth: 0,
-    imageHeight: 0,
   },
 ];
 
-export default function PositioningSection() {
+export default function PositioningSection({
+  heading = (
+    <>
+      Not a Course. Not an Agency.
+      <br />
+      Not a Mastermind.
+    </>
+  ),
+  description = "Supreme OS builds the systems that let your business grow without you in the room.",
+  cards = defaultCards,
+}: PositioningSectionProps) {
   return (
     <section className="bg-cream py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="layout-page-container">
         <div className="layout-heading-center max-w-full">
-          <h2 className="text-heading-section">
-            Not a Course. Not an Agency.
-            <br />
-            Not a Mastermind.
-          </h2>
+          <h2 className="text-heading-section">{heading}</h2>
 
-          <p className="mt-6 text-body-large max-w-400">
-            Supreme OS builds the systems that let your business grow without
-            you in the room.
-          </p>
+          <p className="mt-6 text-body-large max-w-400">{description}</p>
         </div>
 
         <div className="mt-10 grid gap-5 sm:mt-12 md:grid-cols-2 lg:gap-6">
-          {cards.map((card) => (
+          {cards.map((card, index) => (
             <div
-              key={card.title}
-              className="card-basic flex min-h-[215px] flex-col justify-between gap-7 rounded-[8px] p-8 shadow-[0_10px_28px_rgba(16,16,16,0.05)] sm:min-h-[230px] sm:p-9 md:flex-row md:items-center lg:p-10"
+              key={`${card.title}-${index}`}
+              className={[
+                "card-basic rounded-[8px] p-8 shadow-[0_10px_28px_rgba(16,16,16,0.05)] sm:p-9 lg:p-10",
+                card.isLarge
+                  ? "md:row-span-2 flex min-h-[440px] flex-col justify-between"
+                  : "flex min-h-[215px] flex-col justify-between gap-7 sm:min-h-[230px] md:flex-row md:items-center",
+              ].join(" ")}
             >
+              {card.image && (
+                <div
+                  className={
+                    card.isLarge
+                      ? "mb-8 flex justify-center"
+                      : "flex shrink-0 justify-center md:order-2 md:ms-10 md:justify-end"
+                  }
+                >
+                  <Image
+                    src={card.image}
+                    alt={card.imageAlt || card.title}
+                    width={card.imageWidth || 190}
+                    height={card.imageHeight || 140}
+                    className={
+                      card.isLarge
+                        ? "h-auto w-full object-cover"
+                        : "h-auto w-[150px] object-contain sm:w-[170px] lg:w-[190px]"
+                    }
+                  />
+                </div>
+              )}
+
               <div className="max-w-full text-left">
-                <h3 className="text-heading-card">
-                  {card.title}
-                </h3>
+                <h3 className="text-heading-card">{card.title}</h3>
 
                 <p className="mt-5 font-body text-[16px] font-medium leading-[1.52] tracking-[-0.01em] text-black/85 sm:text-[19px]">
                   {card.description}
                 </p>
               </div>
-
-              {card.image && (
-                <div className="flex shrink-0 justify-center md:justify-end ms-10">
-                  <Image
-                    src={card.image}
-                    alt={card.imageAlt}
-                    width={card.imageWidth}
-                    height={card.imageHeight}
-                    className="h-auto w-[150px] object-contain sm:w-[170px] lg:w-[190px]"
-                  />
-                </div>
-              )}
             </div>
           ))}
         </div>
