@@ -9,7 +9,7 @@ export default function EarningsDisclaimerSection() {
 
           <div className="mx-auto mt-5 max-w-[1080px] space-y-5">
             <p className="font-body text-[10.5px] font-medium italic leading-[1.45] tracking-[-0.01em] text-black/80 sm:text-[11.5px] md:text-[12px]">
-              While all testimonials on this page are from real clients, the results you see on this page are not typical. Their experiences do not guarantee similar results for you. Your results may vary based on your skills, experience, motivation, as well as other unforeseen factors. Founder OS has yet to perform studies of the results of its typical clients.
+              While all testimonials on this page are from real clients, the results you see on this page are not typical. Their experiences do not guarantee similar results for you. Your results may vary based on your skills, experience, motivation, as well as other unforeseen factors. Supreme OS has yet to perform studies of the results of its typical clients.
             </p>
 
             <p className="font-body text-[10.5px] font-medium italic leading-[1.45] tracking-[-0.01em] text-black/80 sm:text-[11.5px] md:text-[12px]">
@@ -17,7 +17,7 @@ export default function EarningsDisclaimerSection() {
             </p>
 
             <p className="font-body text-[10.5px] font-medium italic leading-[1.45] tracking-[-0.01em] text-black/80 sm:text-[11.5px] md:text-[12px]">
-              Our programs are designed to educate and support founders in developing their own strategic visibility and systems. Founder OS is a marketing education and training company. We do not sell a business opportunity, “get rich quick” program, or money-making system. We believe, with education, individuals can be better prepared to make decisions, but we do not guarantee success in our training.
+              Our programs are designed to educate and support founders in developing their own strategic visibility and systems. Supreme OS is a marketing education and training company. We do not sell a business opportunity, “get rich quick” program, or money-making system. We believe, with education, individuals can be better prepared to make decisions, but we do not guarantee success in our training.
             </p>
 
             <p className="font-body text-[10.5px] font-medium italic leading-[1.45] tracking-[-0.01em] text-black/80 sm:text-[11.5px] md:text-[12px]">

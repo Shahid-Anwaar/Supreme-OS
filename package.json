@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconify/react": "^6.0.2",
+    "advanced-level-slider": "file:../advanced-level-slider",
     "embla-carousel": "^8.6.0",
     "embla-carousel-auto-scroll": "^8.6.0",
     "embla-carousel-autoplay": "^8.6.0",

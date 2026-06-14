@@ -17,7 +17,7 @@ const defaultItems = [
   "180+ systems to use in your business",
   "Plug-n-play templates and guides",
   "3 months of group mentorship sessions with Matt",
-  "3 months of access to the Founder OS digital community",
+  "3 months of access to the Supreme OS digital community",
   "Leveraged content creation systems",
   "Content GPS playbook and process",
 ];
@@ -28,7 +28,7 @@ export default function LevelUpBusinessSection({
   ctaText = "WATCH THIS to LEARN more",
   ctaHref = "/apply",
   image = "https://cdn.prod.website-files.com/673ff72afe499201ca5b3d58/67a59c604cb5d3245ec7f178_founder-os-laptop.webp",
-  imageAlt = "Founder OS laptop preview",
+  imageAlt = "Supreme OS laptop preview",
 }: LevelUpBusinessSectionProps) {
   return (
     <section className="relative overflow-hidden bg-cream">

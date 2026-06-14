@@ -40,7 +40,7 @@ const defaultFaqItems: FAQItem[] = [
 
         <p>
           You have access to live interactive Q&amp;A sessions with Matt and the
-          entire Founder OS private community where you can ask questions and
+          entire Supreme OS private community where you can ask questions and
           connect with fellow founders.
         </p>
       </>

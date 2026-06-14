@@ -105,10 +105,10 @@ function FitPoint({
 export default function AudienceFitSection({
   heading = (
     <>
-      How do I know if <br /> Founder OS is for me?
+      How do I know if <br /> Supreme OS is for me?
     </>
   ),
-  brandName = "Founder OS",
+  brandName = "Supreme OS",
   yesItems = defaultYesItems,
   noItems = defaultNoItems,
   ctaText = "Book a Brand Strategy Call",

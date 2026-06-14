@@ -75,7 +75,7 @@ export default function FlagshipPage() {
             description: "Get crystal clear on your path to systemization and results.",
             image:
               "https://cdn.prod.website-files.com/673ff72afe499201ca5b3d58/6834000eff1f151daa6b7129_Frame%2083595%20(2).webp",
-            alt: "Founder OS Community",
+            alt: "Supreme OS Community",
             imageClassName: "w-[220px] sm:w-[240px] md:w-[250px]",
           },
           {
@@ -88,7 +88,7 @@ export default function FlagshipPage() {
           },
           {
             title: "Founder AI",
-            description: "Founder OS custom built AI agents trained on Matt's mind.",
+            description: "Supreme OS custom built AI agents trained on Matt's mind.",
             image:
               "https://cdn.prod.website-files.com/673ff72afe499201ca5b3d58/68367078105043c2455a8e69_ai%20tools.webp",
             alt: "AI Tools",
@@ -99,7 +99,7 @@ export default function FlagshipPage() {
             description: "Install what you need. Use what works for other people.",
             image:
               "https://cdn.prod.website-files.com/673ff72afe499201ca5b3d58/677729397c08cfba7c2b7b72_653c2505f6f1f1a7d7989810_productivity-hacks.webp",
-            alt: "Founder OS productivity tools",
+            alt: "Supreme OS productivity tools",
             imageClassName: "w-[190px] sm:w-[210px] md:w-[220px]",
           },
           {
@@ -107,7 +107,7 @@ export default function FlagshipPage() {
             description: "Exclusive community of founders building together.",
             image:
               "https://cdn.prod.website-files.com/673ff72afe499201ca5b3d58/6836707a920717d135ccdc19_community.webp",
-            alt: "Founder OS community",
+            alt: "Supreme OS community",
             imageClassName: "w-[220px] sm:w-[240px] md:w-[250px]",
           },
           {
@@ -115,7 +115,7 @@ export default function FlagshipPage() {
             description: "Install the architecture of scale and go further, faster.",
             image:
               "https://cdn.prod.website-files.com/673ff72afe499201ca5b3d58/683670798d7a4f1dbb14fd54_our%20systems.webp",
-            alt: "Founder OS Systems",
+            alt: "Supreme OS Systems",
             imageClassName: "w-[220px] sm:w-[240px] md:w-[250px]",
           },
         ]}

@@ -21,6 +21,10 @@ const navItems = [
     label: "About us",
     href: "/about",
   },
+  {
+    label: "Light Offer",
+    href: "/fos-light-offer",
+  },
 ];
 
 export default function HeaderSection() {

@@ -138,7 +138,7 @@ function BlogPreviewCard({ post }: { post: BlogPost }) {
 }
 
 export default function BlogPreviewSection({
-  heading = "Founder OS Blog",
+  heading = "Supreme OS Blog",
   description = "Get access to our guides, playbooks, and blueprints for growing your business",
   ctaText = "Read More",
   ctaHref = "/blog",

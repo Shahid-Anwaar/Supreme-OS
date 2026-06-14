@@ -27,7 +27,6 @@ export default function Home() {
         trustText="Trusted by 5,000+ founders building systemized, founder-led brands."
         showCompaniesSlider={true}
       />
-
       <PositioningSection />
       <FrameworkCtaSection />
       <FounderTestimonialsSection />

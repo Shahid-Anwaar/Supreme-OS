@@ -57,7 +57,7 @@ export default function HeroSection({
             </div>
           )}
 
-          <h1 className="max-w-220 font-body text-[43px] font-black leading-[1.04] tracking-[-0.010em] text-ink sm:text-[58px] md:text-[68px] lg:text-[72px]">
+          <h1 className="text-heading-page">
             {title}
           </h1>
 
