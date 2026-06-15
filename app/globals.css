@@ -87,7 +87,7 @@ body {
      ========================================================= */
 
   .layout-page-container {
-    @apply mx-auto w-full max-w-348 px-4 sm:px-5 md:px-6 lg:px-8 xl:px-0;
+    @apply mx-auto w-full max-w-326 px-4 sm:px-5 md:px-6 lg:px-8 xl:px-0;
   }
 
   .layout-section-space {
@@ -131,7 +131,7 @@ body {
   }
 
   .text-heading-page {
-    @apply font-head text-[32px] font-black leading-[1.02] tracking-[-0.055em] text-ink sm:text-[44px] md:text-[54px] lg:text-[64px];
+    @apply max-w-220 font-body text-[43px] font-black leading-[1.04] tracking-[-0.010em] text-ink sm:text-[58px] md:text-[68px] lg:text-[72px];
   }
 
   .text-heading-section {
@@ -187,7 +187,7 @@ body {
   }
 
   .text-body-default {
-    @apply font-body text-[14px] font-medium leading-[1.7] text-muted sm:text-[15px];
+    @apply font-body text-[22px] font-medium leading-[1.25] tracking-[-0.025em] text-ink sm:text-[24px] md:text-[26px];
   }
 
   .text-body-small {

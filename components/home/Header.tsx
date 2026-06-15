@@ -1,34 +1,40 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
   {
     label: "Supreme OS Velocity",
-    href: "#velocity",
+    href: "/",
   },
   {
     label: "Edge",
-    href: "#edge",
+    href: "/edge",
   },
   {
     label: "Flagship",
-    href: "#flagship",
+    href: "/flagship",
   },
   {
     label: "About us",
-    href: "#about",
+    href: "/about",
+  },
+  {
+    label: "Light Offer",
+    href: "/fos-light-offer",
   },
 ];
 
 export default function HeaderSection() {
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-2 z-50 bg-cream py-3.5 sm:py-4">
+    <header className="sticky top-3 z-50 bg-cream py-3.5 sm:py-4">
       <div className="layout-page-container">
-        <nav className="nav-bar-shell min-h-[54px] rounded-[10px] bg-paper px-5 shadow-[0_8px_26px_rgba(16,16,16,0.06)] sm:px-6 lg:px-8 py-3">
+        <nav className="nav-bar-shell min-h-[54px] rounded-[10px] bg-white/80 px-5 shadow-[0_0px_26px_rgba(16,16,16,0.04)] sm:px-6 lg:px-8 py-2">
           {/* Left Side */}
           <div className="flex min-w-0 items-center gap-7 lg:gap-9">
             <Link
@@ -40,12 +46,13 @@ export default function HeaderSection() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden items-center gap-8 lg:flex xl:gap-[46px]">
+            <div className="hidden items-center gap-3 lg:flex xl:gap-3.5">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="font-body text-[16px] font-semibold leading-none text-black/85 transition-colors duration-200 hover:text-primary-700"
+                  className={`font-body text-[16px] py-2 px-3.5 rounded-full font-semibold leading-none text-black/85 transition-colors duration-200 hover:bg-primary hover:text-black
+                    ${pathname === item.href ? " bg-primary text-black" : " bg-transparent"}`}
                 >
                   {item.label}
                 </Link>
@@ -77,19 +84,16 @@ export default function HeaderSection() {
           >
             <span className="relative h-4 w-5">
               <span
-                className={`absolute left-0 h-0.5 w-5 rounded-full bg-ink transition-all duration-200 ${
-                  mobileOpen ? "top-1.5 rotate-45" : "top-0"
-                }`}
+                className={`absolute left-0 h-0.5 w-5 rounded-full bg-ink transition-all duration-200 ${mobileOpen ? "top-1.5 rotate-45" : "top-0"
+                  }`}
               />
               <span
-                className={`absolute left-0 top-1.5 h-0.5 w-5 rounded-full bg-ink transition-all duration-200 ${
-                  mobileOpen ? "opacity-0" : "opacity-100"
-                }`}
+                className={`absolute left-0 top-1.5 h-0.5 w-5 rounded-full bg-ink transition-all duration-200 ${mobileOpen ? "opacity-0" : "opacity-100"
+                  }`}
               />
               <span
-                className={`absolute left-0 h-0.5 w-5 rounded-full bg-ink transition-all duration-200 ${
-                  mobileOpen ? "top-1.5 -rotate-45" : "top-3"
-                }`}
+                className={`absolute left-0 h-0.5 w-5 rounded-full bg-ink transition-all duration-200 ${mobileOpen ? "top-1.5 -rotate-45" : "top-3"
+                  }`}
               />
             </span>
           </button>
